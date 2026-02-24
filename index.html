@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Guess Game</title>
+    <meta charset="UTF-8">
+    <title>🎯 Guess The Number Game</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #ffaa00;
+        }
+    </style>
 </head>
 <body>
-    <h1>Guess The Number Game</h1>
+
+    <div class="container">
+        <h1>🎯 Guess The Number Game</h1>
+
+        <p>
+            Welcome to the Number Guessing Game!
+        </p>
+
+        <p>
+            Enter a maximum number and try to guess the randomly generated number.
+        </p>
+
+        <p>
+            Type <b>"quit"</b> anytime to exit the game.
+        </p>
+
+        <button class="btn" onclick="startGame()">Start Game</button>
+    </div>
 
     <script src="guessgame.js"></script>
+
+    <script>
+        function startGame() {
+            alert("Open Developer Tools → Console to see game messages!");
+        }
+    </script>
+
 </body>
 </html>
